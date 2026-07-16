@@ -4126,3 +4126,207 @@ INSTAGRAM DESTAQUE
     margin-top:15px;
 
 }
+
+/*==================================================
+DESTAQUE NA MÍDIA
+==================================================*/
+
+#midia{
+
+    background:#fff;
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:120px 0;
+
+}
+
+#midia::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    background:rgba(196,18,18,.05);
+
+    left:-180px;
+
+    top:-180px;
+
+}
+
+.news-image{
+
+    position:relative;
+
+}
+
+.news-image img{
+
+    border-radius:25px;
+
+    transition:.45s;
+
+    box-shadow:0 30px 60px rgba(0,0,0,.15);
+
+}
+
+.news-image:hover img{
+
+    transform:scale(1.03);
+
+}
+
+#midia h2{
+
+    font-family:'Bebas Neue';
+
+    font-size:4rem;
+
+    color:var(--primary);
+
+    margin-bottom:25px;
+
+}
+
+#midia p{
+
+    color:#666;
+
+    line-height:2;
+
+    margin-bottom:20px;
+
+}
+
+#midia .btn{
+
+    margin-top:15px;
+
+}
+
+/*==================================================
+LEGADO
+==================================================*/
+
+#legado{
+
+    background:#faf7f2;
+
+    padding:120px 0;
+
+    position:relative;
+
+}
+
+.legacy-photo{
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    box-shadow:0 30px 60px rgba(0,0,0,.15);
+
+}
+
+.legacy-photo img{
+
+    width:100%;
+
+    transition:.5s;
+
+}
+
+.legacy-photo:hover img{
+
+    transform:scale(1.05);
+
+}
+
+#legado h2{
+
+    font-family:'Bebas Neue',sans-serif;
+
+    font-size:4rem;
+
+    color:var(--primary);
+
+    margin-bottom:30px;
+
+}
+
+#legado blockquote{
+
+    position:relative;
+
+    font-size:1.35rem;
+
+    line-height:1.9;
+
+    font-style:italic;
+
+    color:#444;
+
+    padding-left:40px;
+
+    border-left:5px solid var(--secondary);
+
+    margin-bottom:35px;
+
+}
+
+#legado blockquote::before{
+
+    content:"“";
+
+    position:absolute;
+
+    left:-10px;
+
+    top:-35px;
+
+    font-size:6rem;
+
+    color:rgba(196,18,18,.15);
+
+    font-family:serif;
+
+}
+
+#legado p{
+
+    color:#666;
+
+    line-height:2;
+
+}
+
+.legacy-signature{
+
+    margin-top:35px;
+
+}
+
+.legacy-signature strong{
+
+    display:block;
+
+    font-size:1.3rem;
+
+    color:var(--primary);
+
+}
+
+.legacy-signature span{
+
+    color:#777;
+
+}
