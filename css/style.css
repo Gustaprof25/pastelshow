@@ -2120,6 +2120,7 @@ UNIDADES
     content: "";
 
     position: absolute;
+
     top: -250px;
     right: -250px;
 
@@ -2128,10 +2129,28 @@ UNIDADES
 
     border-radius: 50%;
 
-    background: rgba(196, 18, 18, .05);
+    background: rgba(196,18,18,.05);
+
+    pointer-events:none;
 
 }
+#unidades .container{
+    position:relative;
+    z-index:2;
+}
 
+
+.store-card{
+    position:relative;
+    z-index:3;
+}
+
+
+.store-buttons,
+.store-buttons a{
+    position:relative;
+    z-index:10;
+}
 .store-grid {
 
     display: grid;
