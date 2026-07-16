@@ -167,3 +167,46 @@ AOS.init({
     offset:100
 
 });
+
+// FILTRO CARDÁPIO
+
+const buttons = document.querySelectorAll(".menu-categories button");
+const products = document.querySelectorAll(".menu-item");
+
+
+buttons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+
+        buttons.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+
+        button.classList.add("active");
+
+
+        const category = button.dataset.category;
+
+
+        products.forEach(product => {
+
+
+            if(category === "todos" || product.dataset.category === category){
+
+                product.style.display = "block";
+
+            } else {
+
+                product.style.display = "none";
+
+            }
+
+
+        });
+
+
+    });
+
+});

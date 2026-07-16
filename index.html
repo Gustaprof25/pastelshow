@@ -835,134 +835,362 @@
             <div class="section-title text-center">
 
                 <span class="subtitle">
-
                     SABORES QUE ENCANTAM
-
                 </span>
 
                 <h2>
-
                     Muito mais que pastel.
-
                 </h2>
 
                 <p>
-
                     Escolha sua categoria favorita e descubra sabores preparados
                     com ingredientes selecionados.
-
                 </p>
 
             </div>
 
-            <!-- Categorias -->
 
-            <div class="menu-categories">
+            <!-- CATEGORIAS -->
 
-                <button class="active">
+            <div class="menu-categories text-center mb-5">
 
+                <button class="active" data-category="todos">
+                    🥟 Todos
+                </button>
+
+                <button data-category="pasteis">
                     🥟 Pastéis
-
                 </button>
 
-                <button>
-
+                <button data-category="crepes">
                     🫓 Crepes
-
                 </button>
 
-                <button>
-
+                <button data-category="tapiocas">
                     🌮 Tapiocas
-
                 </button>
 
-                <button>
-
+                <button data-category="acai">
                     🫐 Açaí
-
                 </button>
 
-                <button>
-
+                <button data-category="bebidas">
                     🥤 Bebidas
-
                 </button>
 
             </div>
-            <div class="featured-product">
 
-                <div class="row align-items-center">
 
-                    <div class="col-lg-6">
 
-                        <img src="img/campeoes.jpeg" class="img-fluid">
+            <!-- PRODUTOS -->
 
-                    </div>
+            <div class="row g-4" id="menu-items">
 
-                    <div class="col-lg-6">
 
-                        <span class="badge bg-warning">
+                <!-- PRODUTO -->
 
-                            MAIS PEDIDO
+                <div class="col-lg-4 col-md-6 menu-item" data-category="pasteis">
 
-                        </span>
-
-                        <h2>
-
-                            Pastel Campeão
-
-                        </h2>
-
-                        <p>
-
-                            Massa crocante, recheio generoso e ingredientes
-                            selecionados.
-
-                        </p>
-
-                        <a href="#" class="btn btn-warning">
-
-                            Pedir pelo WhatsApp
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="row g-4">
-
-                <div class="col-lg-4">
-
-                    <article class="menu-card">
+                    <div class="menu-card">
 
                         <img src="img/cardapio/carne.jpg">
 
                         <div class="card-body">
 
                             <h4>
-
-                                Carne
-
+                                Pastel de Carne
                             </h4>
 
                             <p>
-
-                                Carne selecionada.
-
+                                Carne temperada com aquele sabor tradicional.
                             </p>
+
+                            <strong>
+                                R$ 12,00
+                            </strong>
 
                         </div>
 
-                    </article>
+                    </div>
 
                 </div>
 
-            </div>
-        </div>
 
+
+                <div class="col-lg-4 col-md-6 menu-item" data-category="pasteis">
+
+                    <div class="menu-card">
+
+                        <img src="img/cardapio/frango.jpg">
+
+                        <div class="card-body">
+
+                            <h4>
+                                Pastel de Frango
+                            </h4>
+
+                            <p>
+                                Frango cremoso com tempero especial.
+                            </p>
+
+                            <strong>
+                                R$ 12,00
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6 menu-item" data-category="pasteis">
+
+                    <div class="menu-card">
+
+                        <img src="img/cardapio/especial.jpg">
+
+                        <div class="card-body">
+
+                            <h4>
+                                Pastel Campeão
+                            </h4>
+
+                            <p>
+                                Receita premiada da Pastel Show.
+                            </p>
+
+                            <strong>
+                                R$ 18,00
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CREPES -->
+
+
+                <div class="col-lg-4 col-md-6 menu-item" data-category="crepes">
+
+                    <div class="menu-card">
+
+                        <img src="img/cardapio/crepe.jpg">
+
+                        <div class="card-body">
+
+                            <h4>
+                                Crepe Especial
+                            </h4>
+
+                            <p>
+                                Massa leve com recheio caprichado.
+                            </p>
+
+                            <strong>
+                                R$ 15,00
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- TAPIOCA -->
+
+
+                <div class="col-lg-4 col-md-6 menu-item" data-category="tapiocas">
+
+                    <div class="menu-card">
+
+                        <img src="img/cardapio/tapioca.jpg">
+
+                        <div class="card-body">
+
+                            <h4>
+                                Tapioca Regional
+                            </h4>
+
+                            <p>
+                                Sabores do Tocantins.
+                            </p>
+
+                            <strong>
+                                R$ 14,00
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- ACAI -->
+
+
+                <div class="col-lg-4 col-md-6 menu-item" data-category="acai">
+
+                    <div class="menu-card">
+
+                        <img src="img/cardapio/acai.jpg">
+
+                        <div class="card-body">
+
+                            <h4>
+                                Açaí Cremoso
+                            </h4>
+
+                            <p>
+                                Acompanhamentos à escolha.
+                            </p>
+
+                            <strong>
+                                R$ 15,00
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BEBIDAS -->
+
+
+                <div class="col-lg-4 col-md-6 menu-item" data-category="bebidas">
+
+                    <div class="menu-card">
+
+                        <img src="img/cardapio/bebidas.jpg">
+
+                        <div class="card-body">
+
+                            <h4>
+                                Refrigerantes e Sucos
+                            </h4>
+
+                            <p>
+                                Bebidas geladas para acompanhar.
+                            </p>
+
+                            <strong>
+                                R$ 6,00
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- PRODUTO DESTAQUE -->
+
+        <div class="featured-product mt-5">
+
+            <div class="row align-items-center g-4">
+
+                <div class="col-lg-6">
+
+                    <div class="featured-image">
+
+                        <img src="img/campeoes.jpeg" class="img-fluid rounded-4 shadow"
+                            alt="Pastel Campeão Pastel Show">
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+
+                    <span class="badge bg-warning text-dark px-3 py-2 rounded-pill">
+
+                        🏆 MAIS PEDIDO
+
+                    </span>
+
+
+                    <h2 class="mt-3">
+
+                        Pastel Campeão
+
+                    </h2>
+
+
+                    <p>
+
+                        O sabor que representa a história da Pastel Show.
+                        Uma receita premiada, criada com ingredientes selecionados
+                        e o verdadeiro sabor do Tocantins.
+
+                    </p>
+
+
+                    <ul class="featured-list">
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Receita campeã de festivais gastronômicos
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Massa crocante e recheio especial
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Uma experiência única em sabor
+                        </li>
+
+                    </ul>
+
+
+                    <div class="d-flex align-items-center gap-3 mt-4">
+
+                        <strong class="price">
+
+                            R$ 18,00
+
+                        </strong>
+
+
+                        <a href="https://wa.me/5563999999999?text=Olá, gostaria de pedir o Pastel Campeão"
+                            target="_blank" class="btn btn-warning rounded-pill px-4">
+
+                            <i class="bi bi-whatsapp"></i>
+                            Pedir agora
+
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
     </section>
 
 
@@ -1161,8 +1389,8 @@
 
                             <div class="store-buttons">
 
-                                <a href="https://maps.app.goo.gl/tjaMkAxVqtGA911o6"
-                                    target="_blank" class="btn btn-outline-danger">
+                                <a href="https://maps.app.goo.gl/tjaMkAxVqtGA911o6" target="_blank"
+                                    class="btn btn-outline-danger">
 
                                     <i class="bi bi-geo-fill"></i>
                                     Como chegar
