@@ -4372,3 +4372,337 @@ LEGADO
 .developer-link strong{
     font-weight: 700;
 }
+.cookie-banner{
+
+    position:fixed;
+    left:20px;
+    right:20px;
+    bottom:20px;
+
+    background:#1f1f1f;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    z-index:9999;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+
+    display:none;
+
+}
+
+.cookie-content{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:30px;
+
+}
+
+.cookie-text{
+
+    color:white;
+
+}
+
+.cookie-text h4{
+
+    margin-bottom:10px;
+
+}
+
+.cookie-text p{
+
+    margin:0;
+
+    opacity:.85;
+
+}
+
+.cookie-text a{
+
+    color:#ffc107;
+
+}
+
+.cookie-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-shrink:0;
+
+}
+
+@media(max-width:768px){
+
+.cookie-content{
+
+flex-direction:column;
+align-items:flex-start;
+
+}
+
+.cookie-buttons{
+
+width:100%;
+
+}
+
+.cookie-buttons .btn{
+
+width:100%;
+
+}
+
+}
+.footer-links{
+    margin-top:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    flex-wrap:wrap;
+
+    font-size:.9rem;
+}
+
+.footer-links a{
+    color:rgba(255,255,255,.75);
+    text-decoration:none;
+    transition:.3s ease;
+    position:relative;
+}
+
+.footer-links a:hover{
+    color:var(--secondary);
+}
+
+.footer-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-3px;
+    width:0;
+    height:2px;
+    background:var(--secondary);
+    transition:.3s ease;
+}
+
+.footer-links a:hover::after{
+    width:100%;
+}
+
+@media (max-width:768px){
+
+    .footer-links{
+        flex-direction:column;
+        gap:8px;
+    }
+
+}
+/*=====================================
+PÁGINAS LEGAIS
+=====================================*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#f8f8f8;
+    color:#333;
+    line-height:1.8;
+}
+
+.legal-section{
+
+    padding:90px 0;
+
+    min-height:100vh;
+
+}
+
+.legal-card{
+
+    background:#fff;
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:60px;
+
+    border-radius:24px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.legal-logo{
+
+    width:180px;
+
+    display:block;
+
+    margin:0 auto 35px;
+
+}
+
+.legal-card h1{
+
+    font-family:'Bebas Neue', cursive;
+
+    font-size:3rem;
+
+    color:#5a2b14;
+
+    margin-bottom:10px;
+
+}
+
+.legal-card h2{
+
+    margin-top:40px;
+
+    margin-bottom:15px;
+
+    color:#5a2b14;
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+}
+
+.legal-card p{
+
+    margin-bottom:18px;
+
+    color:#555;
+
+}
+
+.legal-card ul{
+
+    padding-left:25px;
+
+    margin-bottom:25px;
+
+}
+
+.legal-card li{
+
+    margin-bottom:10px;
+
+}
+
+.legal-date{
+
+    color:#999;
+
+    margin-bottom:35px;
+
+    font-size:.9rem;
+
+}
+
+.legal-divider{
+
+    width:80px;
+
+    height:4px;
+
+    background:#ffc107;
+
+    margin:25px 0 35px;
+
+    border-radius:50px;
+
+}
+
+.back-home{
+
+    margin-top:45px;
+
+}
+
+.back-home .btn{
+
+    padding:14px 35px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+}
+
+.back-home .btn:hover{
+
+    transform:translateY(-3px);
+
+    transition:.3s;
+
+}
+
+.legal-footer{
+
+    text-align:center;
+
+    margin-top:50px;
+
+    color:#999;
+
+    font-size:.9rem;
+
+}
+
+.legal-footer a{
+
+    color:#5a2b14;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.legal-footer a:hover{
+
+    color:#ffc107;
+
+}
+
+@media(max-width:768px){
+
+    .legal-card{
+
+        padding:35px 25px;
+
+        border-radius:18px;
+
+    }
+
+    .legal-card h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .legal-card h2{
+
+        font-size:1.3rem;
+
+    }
+
+    .legal-logo{
+
+        width:140px;
+
+    }
+
+}

@@ -2387,7 +2387,7 @@ INSTAGRAM
 
                 <div>
 
-                    © 2026 <strong>Pastel Show</strong>
+                    &copy; <span id="currentYear"></span> <strong>Pastel Show</strong>
 
                     <br>
 
@@ -2408,8 +2408,27 @@ INSTAGRAM
                 </div>
 
             </div>
+            <div class="footer-links">
 
+                <a href="politica-de-privacidade.html">
+                    Política de Privacidade
+                </a>
+
+                |
+
+                <a href="politica-de-cookies.html">
+                    Política de Cookies
+                </a>
+
+                |
+
+                <a href="termos-de-uso.html">
+                    Termos de Uso
+                </a>
+
+            </div>
         </div>
+
 
     </footer>
 
@@ -2424,6 +2443,51 @@ INSTAGRAM
     <button id="backToTop">
         <i class="bi bi-chevron-up"></i>
     </button>
+
+    <div id="cookieBanner" class="cookie-banner">
+
+        <div class="cookie-content">
+
+            <div class="cookie-text">
+
+                <h4>🍪 Utilizamos cookies</h4>
+
+                <p>
+                    Utilizamos cookies para melhorar sua experiência,
+                    analisar o tráfego do site e oferecer um atendimento
+                    mais eficiente.
+
+                    Ao continuar navegando você concorda com nossa
+                    <a href="politica-de-cookies.html">
+                        Política de Cookies
+                    </a>
+                    e
+                    <a href="politica-de-privacidade.html">
+                        Política de Privacidade.
+                    </a>
+                </p>
+
+            </div>
+
+            <div class="cookie-buttons">
+
+                <button id="rejectCookies" class="btn btn-outline-light">
+
+                    Recusar
+
+                </button>
+
+                <button id="acceptCookies" class="btn btn-warning">
+
+                    Aceitar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -2438,6 +2502,10 @@ INSTAGRAM
 
     <!-- ScrollTrigger -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
 
     <!-- JS -->
     <script src="js/script.js"></script>

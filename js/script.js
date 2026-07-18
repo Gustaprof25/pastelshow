@@ -210,3 +210,27 @@ buttons.forEach(button => {
     });
 
 });
+
+const banner = document.getElementById("cookieBanner");
+
+if(!localStorage.getItem("cookiesAccepted")){
+
+    banner.style.display="block";
+
+}
+
+document.getElementById("acceptCookies").onclick=()=>{
+
+    localStorage.setItem("cookiesAccepted","true");
+
+    banner.style.display="none";
+
+}
+
+document.getElementById("rejectCookies").onclick=()=>{
+
+    localStorage.setItem("cookiesAccepted","false");
+
+    banner.style.display="none";
+
+}
